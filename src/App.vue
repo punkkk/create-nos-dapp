@@ -12,12 +12,13 @@
 
 <script>
 import AppHeader from './components/app-header'
-const nosApi = window.NOS ? window.NOS.V1 : null
+import nosApi from '@nosplatform/api-functions'
 
 export default {
   name: 'app',
   components: { AppHeader },
-
+  created () {
+  },
   data: function () {
     return {
       nos: nosApi,
